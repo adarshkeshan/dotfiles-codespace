@@ -1,9 +1,10 @@
 alias c='clear'
 alias claer='clear'
 alias clera='clear'
+alias claude='claude --dangerously-skip-permissions'
 
-#alias vi='vi'
-
+alias vim='nvim'
+alias vi='nvim'
 
 ## A faster change directory
 alias cd..='cd ..'
@@ -11,14 +12,12 @@ alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 
-
 ## Colorize the ls output ##
 # alias ls='ls --color=auto'
 ## Use a long listing format ##
 # alias ll='ls -la
 # '## Show hidden files ##
 # alias l.='ls -d .* --color=auto'
-
 
 #MakeDirectory
 alias mkdir='mkdir -pv'
@@ -30,20 +29,28 @@ alias ttor='tmuxinator'
 alias takeover='tmux detach -a'
 
 #Git greap
+alias gc='git commit'
 alias gg='git grep'
 alias gcp='gc! --no-edit && gp -f'
+alias gst='git status'
 # convenience aliases for editing configs
 alias ev='vi ~/.vimrc'
 alias ea='vi ~/.alias'
 alias ef='vi ~/.functions.sh'
 alias et='vi ~/.tmux.conf'
 alias ez='vi ~/.zshrc'
+alias eb='vi ~/.bash_aliases'
 
 alias sv='source ~/.vimrc'
 alias sa='source ~/.alias'
 alias sf='source ~/.functions.sh'
 alias st='source ~/.tmux.conf'
 alias sz='source ~/.zshrc'
+alias sb='source ~/.bash_aliases'
+alias cost='ccusage'
+
+export EDITOR=nvim
+export VISUAL=nvim
 
 #python
 alias removePycache='find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf'
